@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mcqFragment" >
+
+    <TextView
+        android:id="@+id/MCQ"
+        android:gravity="center"
+        android:paddingTop="5dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <com.loopj.android.image.SmartImageView
+    	android:id="@+id/image"
+    	android:layout_gravity="center"
+    	android:layout_width="100sp"
+    	android:layout_height="100sp" />
+
+    
+    <RadioGroup
+        android:id="@+id/mcq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+           
+	    	<RadioButton 
+	    	    android:id="@+id/opt1"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"/>
+	    	<RadioButton 
+	    	    android:id="@+id/opt2"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"/>
+	     
+	    	<RadioButton 
+	    	    android:id="@+id/opt3"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"/>
+	    	<RadioButton 
+	    	    android:id="@+id/opt4"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"/>
+	   
+    </RadioGroup>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    	<Button
+	        android:id="@+id/submitBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/submit"
+	        android:layout_weight="1" />
+        <Button
+	        android:id="@+id/nextBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/next"
+	        android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

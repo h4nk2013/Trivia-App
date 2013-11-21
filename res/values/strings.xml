@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trivia</string>
+    <string name="play">Play</string>
+    <string name="start">Start Trivia</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="right">True</string>
+    <string name="wrong">False</string>
+
+</resources>
