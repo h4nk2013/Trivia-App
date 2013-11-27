@@ -8,9 +8,18 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.os.AsyncTask;
 
 public class JsonParser extends AsyncTask<String, Void, String> {
+	public Context context;
+	public ProgressDialog dialog;
+	
+	public JsonParser(Context mContext) {
+		// TODO Auto-generated constructor stub
+		context = mContext;
+	}
 	@Override
 	protected String doInBackground(String...params) {
 		HttpURLConnection con;
@@ -42,6 +51,17 @@ public class JsonParser extends AsyncTask<String, Void, String> {
 			}
 		return null;
 	};
+	
+	@Override
+	protected void onPreExecute() {
+		// TODO Auto-generated method stub
+		super.onPreExecute();
+		dialog = new ProgressDialog(context);
+		dialog.setMessage("Loading...");
+		dialog.show();
+		
+	}
+	
 	@Override
 	protected void onProgressUpdate(Void... values) {
 		// TODO Auto-generated method stub
@@ -51,6 +71,7 @@ public class JsonParser extends AsyncTask<String, Void, String> {
 	protected void onPostExecute(String result) {
 		// TODO Auto-generated method stub
 		super.onPostExecute(result);
+		dialog.dismiss();
 	}
 
 

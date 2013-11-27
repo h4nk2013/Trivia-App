@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trivialidades</string>
+    <string name="play">Jugar</string>
+    <string name="start">Comience Trivia</string>
+    <string name="next">Próximo</string>
+    <string name="submit">Submit</string>
+    <string name="right">Presentar</string>
+    <string name="wrong">Falso</string>
+
+</resources>
